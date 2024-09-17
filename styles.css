@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(145, 137, 137);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 70%; /* Adjusted for better responsiveness */
+    max-width: 700px; /* Maximum width to prevent stretching on large screens */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+#resume-form {
+    background-image: linear-gradient(109.6deg, #8b8b8bf1.2%, rgba(128, 87, 122, 0.922) 91.1%);
+    border-radius: 15px;
+    box-shadow: 0 0 25px #1102021a;
+    padding: 20px;
+    border: 2px solid #abb9c0;
+    box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(211, 208, 208);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: #082574af;
+    font-size: 1.9rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+label {
+    font-size: 1.2rem;
+    color: white;
+}
+
+form input, form textarea {
+    width: 100%; /* Make form elements responsive */
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #eee4ec71;
+    border-radius: 6px;
+    background-color: rgba(221, 168, 209, 0.422);
+    box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+}
+
+button {
+    color: rgb(255, 255, 255); /* White text for better readability on gradient */
+    background-image: linear-gradient(109.6deg, #1a68fa, rgba(228, 170, 145, 0.959));
+    border: 2px solid rgb(91, 28, 236);
+    border-radius: 50px; /* Make buttons rounder */
+    margin: 10px;
+    padding: 12px 20px; /* Adjust padding for better click area */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(109.6deg, #1aa0fa, rgba(145, 218, 228, 0.8)); /* Slightly change gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+button:active {
+    transform: scale(1); /* Remove scale effect on click */
+    background-image: linear-gradient(109.6deg, #1ad8fa, rgba(228, 145, 217, 0.6)); /* Darken gradient on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 95%; /* Slightly larger width for tablets and medium screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    button {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    form input, form textarea {
+        padding: 12px; /* Slightly adjusted padding */
+        margin: 8px 0; /* Reduced margin for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Slightly smaller font size for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Full width for very small screens */
+        padding: 10px; /* Reduced padding for very small screens */
+    }
+
+    button {
+        padding: 8px 12px; /* Further reduced padding for very small screens */
+        font-size: 12px; /* Further reduced font size for very small screens */
+    }
+
+    form input, form textarea {
+        padding: 10px; /* Adjusted padding for very small screens */
+        margin: 6px 0; /* Reduced margin for very small screens */
+    }
+
+    h2 {
+        font-size: 1.4rem; /* Smaller font size for very small screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 100%; /* Full width for extremely small screens */
+        padding: 5px; /* Minimal padding for very small screens */
+    }
+
+    button {
+        padding: 6px 10px; /* Further reduced padding for extremely small screens */
+        font-size: 10px; /* Further reduced font size for extremely small screens */
+    }
+
+    form input, form textarea {
+        padding: 8px; /* Adjusted padding for extremely small screens */
+        margin: 4px 0; /* Reduced margin for extremely small screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Smaller font size for extremely small screens */
+    }
+}
